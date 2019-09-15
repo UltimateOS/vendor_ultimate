@@ -194,6 +194,9 @@ CUSTOM_LOCALES += \
 # Bootanimation
 $(call inherit-product, vendor/ultimate/config/bootanimation.mk)
 
+# Fonts
+include vendor/ultimate/config/fonts.mk
+
 include vendor/ultimate/config/version.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
