@@ -217,7 +217,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Workaround AOSP AM crash
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.fflag.override.settings_enable_monitor_phantom_procs=false
-    
+
+# TouchGestures
+PRODUCT_PACKAGES += \
+    TouchGestures
+
 # These packages are excluded from user builds
 PRODUCT_PACKAGES_DEBUG += \
     procmem
