@@ -187,6 +187,10 @@ SKIP_BOOT_JARS_CHECK := true
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true
 
+# Workaround AOSP AM crash
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.fflag.override.settings_enable_monitor_phantom_procs=false
+    
 # These packages are excluded from user builds
 PRODUCT_PACKAGES_DEBUG += \
     procmem
