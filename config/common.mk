@@ -180,6 +180,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     OmniJaws
 
+# Launcher3
+PRODUCT_PACKAGES += \
+    Launcher3QuickStep
+
 # rsync
 PRODUCT_PACKAGES += \
     rsync
