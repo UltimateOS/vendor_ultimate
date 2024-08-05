@@ -95,6 +95,10 @@ PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+# BatteryStatsViewer
+PRODUCT_PACKAGES += \
+    BatteryStatsViewer
+
 # BtHelper
 PRODUCT_PACKAGES += \
     BtHelper
