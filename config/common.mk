@@ -269,6 +269,9 @@ CUSTOM_LOCALES += \
 # Bootanimation
 $(call inherit-product, vendor/ultimate/config/bootanimation.mk)
 
+# Inherit GMS Services
+$(call inherit-product, vendor/gms/products/gms.mk)
+
 # Fonts
 include vendor/ultimate/config/fonts.mk
 
