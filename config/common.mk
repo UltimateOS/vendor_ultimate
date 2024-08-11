@@ -255,6 +255,10 @@ PRODUCT_PACKAGES += \
     NavigationBarNoHintOverlay \
     NetworkStackOverlay
 
+# Themes
+PRODUCT_PACKAGES += \
+    AndroidBlackThemeOverlay
+    
 # Translations
 CUSTOM_LOCALES += \
     ast_ES \
