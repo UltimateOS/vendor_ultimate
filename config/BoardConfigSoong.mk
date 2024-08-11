@@ -39,6 +39,7 @@ SOONG_CONFIG_ultimateGlobalVars += \
     gralloc_handle_has_ubwcp_format \
     include_miui_camera \
     uses_miui_camera \
+    spoof_first_api_level_32 \
     target_camera_package_name \
     target_health_charging_control_charging_path \
     target_health_charging_control_charging_enabled \
@@ -83,6 +84,7 @@ SOONG_CONFIG_ultimateGlobalVars_gralloc_handle_has_ubwcp_format := $(TARGET_GRAL
 SOONG_CONFIG_ultimateGlobalVars_include_miui_camera := $(TARGET_INCLUDES_MIUI_CAMERA)
 SOONG_CONFIG_ultimateGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLAY_ARRAY)
 SOONG_CONFIG_ultimateGlobalVars_uses_miui_camera := $(TARGET_USES_MIUI_CAMERA)
+SOONG_CONFIG_ultimateGlobalVars_spoof_first_api_level_32 := $(SPOOF_FIRST_API_LEVEL_32)
 SOONG_CONFIG_ultimateNvidiaVars_uses_nvidia_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
 SOONG_CONFIG_ultimateQcomVars_qti_vibrator_use_effect_stream := $(TARGET_QTI_VIBRATOR_USE_EFFECT_STREAM)
 SOONG_CONFIG_ultimateQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
