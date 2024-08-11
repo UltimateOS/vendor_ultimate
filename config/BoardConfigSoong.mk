@@ -32,6 +32,7 @@ SOONG_CONFIG_ultimateGlobalVars += \
     additional_gralloc_10_usage_bits \
     bootloader_message_offset \
     camera_needs_client_info_lib \
+    uses_nothing_camera \
     camera_needs_client_info_lib_oplus \
     camera_override_format_from_reserved \
     gralloc_handle_has_custom_content_md_reserved_size \
@@ -78,6 +79,7 @@ endif
 
 # Soong bool variables
 SOONG_CONFIG_ultimateGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
+SOONG_CONFIG_ultimateGlobalVars_uses_nothing_camera := $(TARGET_USES_NOTHING_CAMERA)
 SOONG_CONFIG_ultimateGlobalVars_camera_needs_client_info_lib_oplus := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB_OPLUS)
 SOONG_CONFIG_ultimateGlobalVars_camera_override_format_from_reserved := $(TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED)
 SOONG_CONFIG_ultimateGlobalVars_gralloc_handle_has_custom_content_md_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE)
