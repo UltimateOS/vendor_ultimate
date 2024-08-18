@@ -184,6 +184,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural;com.google.android.systemui.gxoverlay
 
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/ultimate/overlay/common
+
+PRODUCT_PACKAGES += \
+    AndroidBlackThemeOverlay \
+    DocumentsUIOverlay \
+    NavigationBarNoHintOverlay \
+    NetworkStackOverlay
+
 # OmniJaws service
 PRODUCT_PACKAGES += \
     OmniJaws
@@ -254,18 +263,9 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
 
-# SetupWizard
-PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/ultimate/overlay/common
-
+# ThemePicker
 PRODUCT_PACKAGES += \
-    DocumentsUIOverlay \
-    NavigationBarNoHintOverlay \
-    NetworkStackOverlay
-
-# Themes
-PRODUCT_PACKAGES += \
-    AndroidBlackThemeOverlay
+    ThemePicker
     
 # Translations
 CUSTOM_LOCALES += \
