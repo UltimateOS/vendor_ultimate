@@ -197,6 +197,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OmniJaws
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    vendor/ultimate/config/permissions/privapp-permissions-settings.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-settings.xml
+
 # Launcher3
 PRODUCT_PACKAGES += \
     Launcher3QuickStep
