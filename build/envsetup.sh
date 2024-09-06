@@ -1,10 +1,3 @@
-function __print_ultimate_functions_help() {
-cat <<EOF
-Additional UltimateOS functions:
-- mka:             Builds using SCHED_BATCH on all processors.
-EOF
-}
-
 function mka() {
     m "$@"
 }
