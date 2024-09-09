@@ -14,5 +14,12 @@ ULTIMATE_VERSION := UltimateOS-$(ULTIMATE_VERSION_TAG)-v$(PRODUCT_VERSION_MAJOR)
 
 ULTIMATE_DISPLAY_VERSION := $(ULTIMATE_VERSION_TAG)-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)
 
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.ultimate.version=$(ULTIMATE_VERSION) \
+    ro.ultimate.releasetype=$(ULTIMATE_BUILDTYPE) \
+    ro.ultimate.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
+    ro.modversion=$(ULTIMATE_VERSION) \
+    ro.ultimate.display.version=$(ULTIMATE_DISPLAY_VERSION)
+
 # Signing
 -include vendor/ultimate-priv/keys.mk
