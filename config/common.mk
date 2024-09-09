@@ -115,15 +115,6 @@ PRODUCT_PACKAGES += \
     product_charger_res_images_vendor
 endif
 
-ifeq ($(ULTIMATE_OFFICIAL), true)
-# Ultimate packages
-PRODUCT_PACKAGES += \
-    Updater
-
-PRODUCT_COPY_FILES += \
-    vendor/ultimate/prebuilt/common/etc/init/init.ultimate-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.ultimate-updater.rc
-endif
-
 # Disable RescueParty due to high risk of data loss
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.disable_rescue=true
